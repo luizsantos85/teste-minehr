@@ -1,12 +1,15 @@
+import { PageTitle } from "../../components/PageTitle";
 import styles from "./styles.module.css";
 
 export const Dashborad = () => {
    return (
-      <section className={`${styles.contentDash} container`}>
+      <section className={styles.contentDash}>
          <div className={styles.headerDash}>
             <div>
-               <h1>Dashboard</h1>
-               <p>Desafio Técnico Frontend</p>
+               <PageTitle
+                  title="Dashboard"
+                  subtitle="Desafio Técnico Frontend"
+               />
             </div>
 
             <button>Filtrar</button>
