@@ -1,0 +1,13 @@
+.contentDash{
+   display: flex;
+   padding-top: 30px;
+   flex: 1;
+}
+
+.headerDash{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex: 1;
+}
+
