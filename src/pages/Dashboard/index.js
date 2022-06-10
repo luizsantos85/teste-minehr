@@ -1,5 +1,7 @@
 import { PageTitle } from "../../components/PageTitle";
+import { FaFilter } from "react-icons/fa";
 import styles from "./styles.module.css";
+import { BoxGraphic } from "../../components/BoxGraphic";
 
 export const Dashborad = () => {
    return (
@@ -11,8 +13,14 @@ export const Dashborad = () => {
                   subtitle="Desafio Técnico Frontend"
                />
             </div>
+            <button className={styles.buttonFilter}>
+               <FaFilter /> Filtrar
+            </button>
+         </div>
 
-            <button>Filtrar</button>
+         <div className={styles.graphics}>
+            <BoxGraphic>***</BoxGraphic>
+            <BoxGraphic>***</BoxGraphic>
          </div>
       </section>
    );
