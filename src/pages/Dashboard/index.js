@@ -1,6 +1,6 @@
+import styles from "./styles.module.css";
 import { PageTitle } from "../../components/PageTitle";
 import { FaFilter } from "react-icons/fa";
-import styles from "./styles.module.css";
 import { BoxGraphic } from "../../components/BoxGraphic";
 
 export const Dashborad = () => {
@@ -19,8 +19,22 @@ export const Dashborad = () => {
          </div>
 
          <div className={styles.graphics}>
-            <BoxGraphic>***</BoxGraphic>
-            <BoxGraphic>***</BoxGraphic>
+            <BoxGraphic title="Barras">
+               
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
+               in provident laborum dolorum. Quis odit doloremque dolorum ipsa
+               minus in enim nostrum exercitationem non, reiciendis quisquam
+               fugiat fugit libero. Vitae!
+            </BoxGraphic>
+
+            
+
+            <BoxGraphic title="Scatter">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
+               in provident laborum dolorum. Quis odit doloremque dolorum ipsa
+               minus in enim nostrum exercitationem non, reiciendis quisquam
+               fugiat fugit libero. Vitae!
+            </BoxGraphic>
          </div>
       </section>
    );

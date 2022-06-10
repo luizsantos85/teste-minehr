@@ -1,7 +1,44 @@
-.boxGraphic{
-
+.boxGraphic {
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.boxHeader{}
+.boxHeader {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 15px;
+}
 
-.boxContent{}
+.boxHeader p {
+   display: flex;
+   align-items: center;
+   width: 80%;
+   font-size: 16px;
+   color: #5d405c;
+   font-weight: 700;
+}
+
+.boxHeader p svg {
+   margin-left: 16px;
+   font-size: 15px;
+   color: #19d7aa;
+}
+
+.boxHeader button {
+   width: 10%;
+   color: #5d405c;
+   background-color: transparent;
+}
+
+.boxHeader button svg {
+   font-size: 30px;
+   display: block;
+   color: #5d405c;
+}
+
+.boxContent {
+   padding: 0 30px;
+}
