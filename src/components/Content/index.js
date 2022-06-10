@@ -6,6 +6,7 @@ export const Content = () => {
       <article>
          <Routes>
             <Route path="/" element={<Dashborad />} />
+            {/* <Route path="*" element={<Notfound />} /> */}
          </Routes>
       </article>
    );

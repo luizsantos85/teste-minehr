@@ -6,7 +6,9 @@ export const BoxGraphic = (props) => {
    return (
       <div className={styles.boxGraphic}>
          <div className={styles.boxHeader}>
-            <p>{ props.title } <FaInfoCircle /></p>
+            <p>
+               {props.title} <FaInfoCircle />
+            </p>
             <button>
                <AiOutlineMenu />
             </button>

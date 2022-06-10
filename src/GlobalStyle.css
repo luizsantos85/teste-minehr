@@ -31,6 +31,21 @@ button {
    padding: 0 1%;
 }
 
+.custom-icon{
+   background: #19D7AA;
+   color: #fff;
+   border-radius: 50%;
+   width: 30px;
+   height: 25px;
+   margin-left: 10px;
+}
+
+.apexcharts-menu-icon {
+   width: 30px;
+   height: 25px;
+   color: #5d405c;
+}
+
 /*Responsivo*/
 @media (max-width: 1080px) {
    html {

@@ -1,34 +1,83 @@
-.contentDash{
+.contentDash {
    width: 100%;
    padding: 30px 1%;
 }
 
-.headerDash{
+.headerDash {
    display: flex;
    justify-content: space-between;
    align-items: center;
    flex: 1;
 }
 
-.buttonFilter{
+.buttonFilter {
    display: flex;
    justify-content: center;
    align-items: center;
    padding: 10px 20px;
-   background-color: #5D405C;
+   background-color: #5d405c;
    border-radius: 10px;
    color: #fff;
    font-weight: 600;
    font-size: 14px;
 }
-.buttonFilter svg{
+.buttonFilter svg {
    color: #fff;
    margin-right: 10px;
 }
 
-.graphics{
+.graphics {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: 30px;
    margin-top: 40px;
+}
+
+/* .boxGraphic {
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+   max-height: 360px;
+}
+.boxHeader {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+.boxHeader p {
+   display: flex;
+   align-items: center;
+   width: 80%;
+   font-size: 16px;
+   color: #5d405c;
+   font-weight: 700;
+}
+
+.boxHeader p svg {
+   margin-left: 16px;
+   font-size: 15px;
+   color: #19d7aa;
+}
+
+.boxHeader button {
+   width: 10%;
+   color: #5d405c;
+   background-color: transparent;
+}
+
+.boxHeader button svg {
+   font-size: 30px;
+   display: block;
+   color: #5d405c;
+} */
+
+
+
+@media (max-width: 900px) {
+   .graphics {
+      grid-template-columns: 1fr;
+   }
 }
