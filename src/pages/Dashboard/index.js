@@ -21,15 +21,12 @@ export const Dashborad = () => {
 
          <div className={styles.graphics}>
             <BoxGraphic title="Barras">
-               <Graphic type="bar" title="Barras" height={310} />
+               <Graphic type="bar" height={310} />
             </BoxGraphic>
-            {/* <div className={styles.boxGraphic}>
-               <Graphic type="bar" title="Barras" height={330} />
-            </div> */}
+            <BoxGraphic title="Scatter">
+               <Graphic type="scatter" height={310} />
+            </BoxGraphic>
 
-            <div className={styles.boxGraphic}>
-               <Graphic type="scatter" title="Scatter" height={310} />
-            </div>
          </div>
       </section>
    );

@@ -31,19 +31,21 @@ button {
    padding: 0 1%;
 }
 
-.custom-icon{
-   background: #19D7AA;
-   color: #fff;
-   border-radius: 50%;
-   width: 30px;
-   height: 25px;
-   margin-left: 10px;
+.apexcharts-toolbar {
+   padding: 0 !important;
 }
 
-.apexcharts-menu-icon {
-   width: 30px;
-   height: 25px;
-   color: #5d405c;
+.apexcharts-menu-icon{
+   width: 40px !important;
+   height: 40px !important;
+   /* background: turquoise; */
+}
+
+.apexcharts-menu-icon svg{
+   width: 40px !important;
+   height: 40px !important;
+   fill: #5d405c !important;
+
 }
 
 /*Responsivo*/

@@ -1,22 +1,23 @@
 .boxGraphic {
-   padding-top:10px;
    background-color: #fff;
    border-radius: 10px;
    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
    max-height: 360px;
+   padding: 0 1%;
 }
 
 .boxHeader {
    display: flex;
    justify-content: space-around;
    align-items: center;
-   /* margin-bottom: 15px; */
+   padding: 20px 0 0 20px;
+
 }
 
 .boxHeader p {
    display: flex;
    align-items: center;
-   width: 80%;
+   width: 100%;
    font-size: 16px;
    color: #5d405c;
    font-weight: 700;
@@ -32,12 +33,6 @@
    width: 10%;
    color: #5d405c;
    background-color: transparent;
-}
-
-.boxHeader button svg {
-   font-size: 30px;
-   display: block;
-   color: #5d405c;
 }
 
 .boxContent {

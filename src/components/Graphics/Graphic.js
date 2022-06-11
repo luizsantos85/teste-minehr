@@ -1,19 +1,26 @@
 import { useEffect, useState } from "react";
 import Chart from "react-apexcharts";
-import { FaInfoCircle } from "react-icons/fa";
 
-const BarGraphic = ({ title, type, height }) => {
+const BarGraphic = ({ type, height }) => {
    const [series, setSeries] = useState([]);
    const [categories, setCategories] = useState([]);
 
    const options = {
       chart: {
          type,
-         // toolbar: {
-         //    show: false,
-         // },
-         zoom: {
-            enabled: false,
+         toolbar: {
+            show: true,
+            offsetX: 0,
+            offsetY: -32,
+            tools: {
+               download: true,
+               selection: true,
+               zoom: false,
+               zoomin: false,
+               zoomout: false,
+               pan: false,
+               reset: false,
+            },
          },
       },
       plotOptions: {
@@ -27,35 +34,16 @@ const BarGraphic = ({ title, type, height }) => {
       },
       xaxis: {
          categories,
+         tickAmount: 10,
+         labels: {
+            formatter: function (val) {
+               return parseFloat(val).toFixed(1);
+            },
+         },
       },
       yaxis: {
          tickAmount: 7,
       },
-      fill: {
-         colors: "#5d405c",
-      },
-
-      // title: {
-      //    text: title,
-      //    align: "left",
-      //    customIcons: [
-      //       {
-      //          icon: "i",
-      //          title: "info",
-      //          class: "custom-icon",
-      //          index: 1,
-      //          click: function (chart, options, e) {
-      //             console.log("clicked custom-icon");
-      //          },
-      //       },
-      //    ],
-      //    style: {
-      //       fontSize: "16px",
-      //       fontWeight: "700",
-      //       fontFamily: "Montserrat",
-      //       color: "#5d405c",
-      //    },
-      // },
    };
 
    const handleGraphic = () => {
@@ -187,21 +175,12 @@ const BarGraphic = ({ title, type, height }) => {
                ],
             },
          ]);
-
-         setCategories({
-            tickAmount: 10,
-            labels: {
-               formatter: function (val) {
-                  return parseFloat(val).toFixed(1);
-               },
-            },
-         });
       }
    };
 
    useEffect(() => {
       handleGraphic();
-   }, []);
+   },[]);
 
    return (
       <Chart options={options} series={series} type={type} height={height} />
